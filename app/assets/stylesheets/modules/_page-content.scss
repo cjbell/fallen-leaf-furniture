@@ -1,0 +1,29 @@
+.page-content {
+  background: rgba(255,255,255,.8);
+  color: #333;
+  padding: 1.25em;
+  margin: 0 1em;
+
+  p {
+    margin: 0 0 1em 0;
+  }
+
+  h2 {
+    margin: 0 0 1em 0;
+    font-size: 1.2em;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@include media-query("(min-width: 42em)") {
+
+  .page-content {
+    margin: 0 2em;
+    width: 32em;
+  }
+
+}
+

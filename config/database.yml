@@ -1,0 +1,23 @@
+login: &login
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: 127.0.0.1
+  username:
+  password:
+
+development:
+  <<: *login
+  database: fallen_leaf_development
+
+test:
+  <<: *login
+  database: fallen_leaf_test
+
+staging:
+  <<: *login
+  database: fallen_leaf_staging
+
+production:
+  <<: *login
+  database: fallen_leaf_production

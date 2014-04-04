@@ -1,0 +1,33 @@
+.site-header {
+  margin: 2em 1em 4em;
+  position: relative;
+  @include clearfix;
+}
+
+.site-header__logo {
+  text-decoration: none;
+  padding: 0 0 0 4.5em;
+  line-height: 63px;
+  @include inline-block;
+  background: image-url("logo.png") no-repeat left;
+  background-size: 60px 40px;
+  max-width: 15em;
+  position: relative;
+  z-index: 2;
+}
+
+.site-header__logo__script {
+  font-size: 1em;
+  vertical-align: top;
+  color: $dark-grey;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 4px;
+  line-height: 1.4;
+}
+
+@include media-query("(min-width: 42em)") {
+  .site-header {
+    margin: 2em 2em 4em;
+  }
+}

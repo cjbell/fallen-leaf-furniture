@@ -1,0 +1,33 @@
+.gallery {
+  margin: 0 1em;
+  max-width: 40em;
+}
+
+.gallery__items {
+  @include unstyled-list;
+}
+
+.gallery__item {
+  float: left;
+  border: 5px solid #fff;
+  margin: 0 1.5% .5em 0;
+  width: 31.5%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.gallery__item__img {
+  width: 100%;
+}
+
+@include media-query("(min-width: 42em)") {
+  .gallery {
+    margin: 0 2em;
+  }
+
+  .gallery__item {
+    width: 23.5%;
+  }
+}

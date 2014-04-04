@@ -1,0 +1,36 @@
+* {
+  @include box-sizing(border-box);
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Gilda Display', serif;
+}
+
+form,
+figure {
+  margin: 0;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+}
+
+dl, dt, dd {
+  margin: 0;
+}
+
+a {
+  color: $dark-grey;
+}
+
+@include media-query("(min-width: 30em)") {
+  html {
+    font-size: 112.5%;
+  }
+}
