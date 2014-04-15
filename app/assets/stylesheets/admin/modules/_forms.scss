@@ -1,0 +1,84 @@
+.form__fields {
+  padding: 2em 0;
+}
+
+.form__fields--primary {
+  float: left;
+  width: 72%;
+}
+
+.form__fields--secondary {
+  float: right;
+  width: 25%;
+}
+
+.form__field {
+  margin: 0 0 1.5em 0;
+}
+
+.form__field--with-border {
+  padding-top: .5em;
+  border-top: 1px solid #f2f2f2;
+}
+
+.form__field label {
+  display: inline-block;
+  margin: .5em 0;
+}
+
+.form__field--no-label label {
+  display: none;
+}
+
+.form__field--checkbox label {
+  display: inline;
+}
+
+.form__field input[type=text],
+.form__field input[type=email],
+.form__field input[type=password],
+.form__field textarea {
+  padding: .5em .25em;
+  font-size: 1em;
+  border: 2px solid #ccc;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    border-color: #34e0c2;
+  }
+}
+
+.form__field textarea {
+  height: 200px;
+}
+
+.form__field-note {
+  font-style: italic;
+  font-size: 12px;
+  padding: .5em 0;
+  color: #ccc;
+}
+
+.form__field .blog__title[type=text] {
+  padding: .5em .75em;
+  border-color: #fff;
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.extended_input {
+  position: relative;
+}
+
+.extended_input .count {
+  display: none;
+}
+
+.form__fields input,
+.form__fields select {
+  font-family: inherit;
+}

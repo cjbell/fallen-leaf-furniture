@@ -1,0 +1,31 @@
+.site-nav__items {
+  margin: 0; padding: 0;
+  list-style: none;
+  float: right;
+}
+
+.site-nav__item {
+  display: inline-block;
+  margin: 0 1em 0 0;
+
+  border-right: 1px solid darken(#415766, 10%);
+}
+
+.site-nav__item:last-child {
+  border-right: 0;
+  margin-right: 0;
+}
+
+.site-nav__item a {
+  color: #fff;
+  padding: .5em 1em .5em 0;
+  text-decoration: none;
+
+  &:hover {
+    color: #34e0c2;
+  }
+}
+
+.site-nav__item .site-nav__item--is-active {
+  color: #34e0c2;
+}

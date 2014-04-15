@@ -1,0 +1,26 @@
+.item-detail {
+  padding: 2em 0;
+
+  dl {
+    margin-bottom: 2em;
+
+    dt {
+      font-weight: 700;
+      display: block;
+      float: left;
+      min-width: 100px;
+    }
+
+    dd { margin: 0; padding: 0; }
+  }
+
+  h2 {
+    margin: 0 0 .5em;
+    display: inline-block;
+    padding: 0 .5em .25em 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  p { margin: 0 0 .5em; }
+
+}

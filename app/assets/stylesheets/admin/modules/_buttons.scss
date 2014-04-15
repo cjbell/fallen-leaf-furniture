@@ -1,0 +1,17 @@
+.button {
+  display: inline-block;
+  padding: 1em 1.5em;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  margin-right: .75em;
+  border: 0;
+}
+
+.button--primary {
+  background: #DA5757;
+}
+
+.button--secondary {
+  background: #34e0c2;
+}

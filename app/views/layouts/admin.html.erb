@@ -1,0 +1,23 @@
+<html class="no-js">
+  <head>
+    <title>Fallen Leaf Furniture | Admin</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+    <link href='http://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag "admin" %>
+  </head>
+  <body class="site site--<%= controller_name %>" data-module="<%= controller_name %>" data-action="<%= action_name %>">
+
+
+    <%#= render "flash_messages" %>
+    <%= render 'layouts/admin/header' %>
+
+    <div class="site-content container">
+      <%= yield %>
+    </div>
+
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>

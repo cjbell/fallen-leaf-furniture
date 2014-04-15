@@ -1,0 +1,14 @@
+<table class="data-items">
+  <thead>
+    <tr>
+      <% columns.each do |c| %>
+        <th><%= c %></th>
+      <% end %>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render collection %>
+  </tbody>
+
+</table>

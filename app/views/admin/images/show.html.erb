@@ -1,0 +1,11 @@
+<header class="page-header">
+  <h1 class="page-header__title"><%= resource.name %></h1>
+
+  <%= link_to 'All images', admin_images_path,
+               class: "button button--secondary page-header__cta" %>
+
+  <%= link_to 'Edit', edit_admin_image_path(resource),
+               class: "button button--primary page-header__cta" %>
+</header>
+
+<%= image_tag resource.source.url(:full) %>

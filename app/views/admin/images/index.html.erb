@@ -1,0 +1,8 @@
+<header class="page-header">
+  <h1 class="page-header__title">Images</h1>
+
+  <%= link_to 'New Image', new_admin_image_path,
+               class: "button button--primary page-header__cta" %>
+</header>
+
+<%= render "data_table", columns: ["ID", "Name", "Actions", "Updated"] %>

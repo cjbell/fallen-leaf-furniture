@@ -1,0 +1,42 @@
+$dark-blue: #000;
+$light-blue: #666;
+$gop-red: #990000;
+
+.pagination {
+  margin: 2em 0;
+  text-align: center;
+
+  span {
+    color: #415766;
+    margin-right: 0.15em;
+    text-align: center;
+  }
+
+  .first {}
+  .prev {}
+  .next {}
+  .last {}
+  .current a { color: #34e0c2; }
+
+  .disabled a {
+    background-color: lighten(#415766, 25%);
+    pointer: default;
+
+    &:hover {
+
+    }
+  }
+
+  a {
+    padding: .25em .75em;
+    text-decoration: none;
+    background-color: lighten(#415766, 10%);
+    color: #fff;
+  }
+
+  a:hover {
+    background-color: #415766;
+    color: #34e0c2;
+  }
+
+}

@@ -1,0 +1,14 @@
+.flash {
+  text-align: center;
+  background: #DA5757;
+}
+
+.flash p {
+  display: inline-block;
+  color: #fff;
+  margin:0; padding: .5em 1em;
+}
+
+.flash-hidden .flash {
+  display: none;
+}

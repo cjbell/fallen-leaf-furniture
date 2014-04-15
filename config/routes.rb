@@ -4,7 +4,12 @@ FallenLeaf::Application.routes.draw do
 
   resources :projects,    only: [:index, :show]
   resources :collections, only: [:index, :show]
-  resources :galleries,   only: [:index, :show], path: 'gallery'
+  resources :images,      only: [:index, :show], path: 'gallery'
+
+  namespace :admin do
+    resources :images
+    resources :projects
+  end
 
   root 'pages#index'
 end

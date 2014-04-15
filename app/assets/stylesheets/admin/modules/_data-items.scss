@@ -1,0 +1,55 @@
+.data-items {
+  width: 100%;
+  border-spacing:0;
+  border-collapse:collapse;
+}
+
+.data-items th,
+.data-items td {
+  padding: .75em; margin: 0;
+}
+
+.data-items thead th {
+  font-weight: normal;
+  text-align: left;
+  background: #415766;
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.data-item a {
+  text-decoration: none;
+  color: #222;
+}
+
+.data-item:nth-child(even) td {
+  background: #f1f1f1;
+}
+
+.data-item__title {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.data-item:hover td {
+  color: #fff;
+  background: #34e0c2;
+}
+
+.data-item:hover a {
+  color: #fff;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.data-item__actions a {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.data-item--is-unpublished td,
+.data-item--is-unpublished a {
+  color: #9f9f9f;
+}

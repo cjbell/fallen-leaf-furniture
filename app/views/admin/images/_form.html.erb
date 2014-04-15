@@ -1,0 +1,24 @@
+<%= form_for [:admin, resource] do |f| %>
+
+  <div class="form__fields form__fields--primary">
+
+    <div class="form__field form__field--no-label">
+      <%= f.label :name %>
+      <%= f.text_field :name, placeholder: "Name your image"  %>
+    </div>
+
+    <div class="form__field">
+      <%= f.file_field :source %>
+      <p class="form__field-note">
+        Your image should be 1200 x 300. This will appear inside the header.
+      </p>
+    </div>
+
+    <div class="form__field form__field--actions">
+      <%= f.submit resource.persisted? ? "Update" : "Publish",
+                   { class: "button button--primary" } %>
+    </div>
+
+  </div>
+
+<% end %>

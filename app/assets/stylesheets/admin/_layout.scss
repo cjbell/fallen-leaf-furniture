@@ -1,0 +1,57 @@
+body {
+  background: #f1f1f1;
+}
+
+* {
+  @include box-sizing(border-box);
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.padding {
+  padding: 3em 0;
+}
+
+.columns {
+  overflow: hidden;
+}
+
+%column {
+  float: left;
+  padding: 0 .5em;
+  margin: 0 0 .5em 0;
+}
+
+.column--4 {
+  @extend %column;
+  width: 33.33333%;
+}
+
+.column--3 {
+  @extend %column;
+  width: 25%;
+}
+
+.column--8 {
+  @extend %column;
+  width: 66.66666%;
+}
+
+.column--6 {
+  @extend %column;
+  width: 50%;
+}
+
+.column--9 {
+  @extend %column;
+  width: 75%;
+}
+
+.column--tight {
+  padding: 0;
+}
+
