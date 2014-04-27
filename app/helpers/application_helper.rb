@@ -14,7 +14,9 @@ module ApplicationHelper
     links = "".html_safe
 
     links <<  link_to('Show', polymorphic_path([:admin, o]), class: "action")
-    # links <<  link_to('Delete', polymorphic_path([:admin, o]), class: "action")
+    links <<  link_to('Delete', polymorphic_path([:admin, o]),
+                      method: :delete,  class: "action",
+                      confirm: "Are you sure?")
 
     content_tag :nav, links, class: "data-item__actions"
   end
