@@ -13,3 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(function(){
+  var $navItems = $('.js-nav-items');
+  $('.js-menu-toggle').on('click', function() {
+    $navItems.toggleClass('is-hidden');
+  });
+});

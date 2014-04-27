@@ -1,30 +1,12 @@
-<!-- <div class="gallery-cover"></div>
-<section class="gallery-item">
-  <img src="http://distilleryimage2.ak.instagram.com/3df6e814baa711e3a2d90002c9d74742_8.jpg" class="gallery-item__img">
-</section> -->
-
 <div class="gallery">
   <ul class="gallery__items">
-    <li class="gallery__item">
-      <img src="http://distilleryimage2.ak.instagram.com/3df6e814baa711e3a2d90002c9d74742_8.jpg" class="gallery__item__img">
-    </li>
-    <li class="gallery__item">
-      <img src="http://distilleryimage3.ak.instagram.com/8dcb3940bb4611e393c612ea443118ff_8.jpg" class="gallery__item__img">
-    </li>
-    <li class="gallery__item">
-      <img src="http://distilleryimage2.ak.instagram.com/3df6e814baa711e3a2d90002c9d74742_8.jpg" class="gallery__item__img">
-    </li>
-    <li class="gallery__item">
-      <img src="http://distilleryimage3.ak.instagram.com/8dcb3940bb4611e393c612ea443118ff_8.jpg" class="gallery__item__img">
-    </li>
-    <li class="gallery__item">
-      <img src="http://distilleryimage2.ak.instagram.com/3df6e814baa711e3a2d90002c9d74742_8.jpg" class="gallery__item__img">
-    </li>
-    <li class="gallery__item">
-      <img src="http://distilleryimage2.ak.instagram.com/3df6e814baa711e3a2d90002c9d74742_8.jpg" class="gallery__item__img">
-    </li>
-    <li class="gallery__item">
-      <img src="http://distilleryimage3.ak.instagram.com/8dcb3940bb4611e393c612ea443118ff_8.jpg" class="gallery__item__img">
-    </li>
+    <% @images.each do |image| %>
+      <li class="gallery__item">
+        <a href="<%= image_path(image) %>">
+          <img data-full="<%= image.source.url(:full) %>"
+              src="<%= image.source.url(:square) %>" class="gallery__item__img">
+        </a>
+      </li>
+    <% end %>
   </ul>
 </div>

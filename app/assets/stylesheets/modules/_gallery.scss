@@ -4,6 +4,7 @@
 }
 
 .gallery__items {
+  @include clearfix;
   @include unstyled-list;
 }
 

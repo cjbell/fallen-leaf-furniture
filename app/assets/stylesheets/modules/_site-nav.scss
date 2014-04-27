@@ -10,8 +10,7 @@
   padding: 4em 0 0 0;
 
   &.is-hidden {
-    visibility: hidden;
-    opacity: 0;
+    display: none;
   }
 }
 
@@ -59,8 +58,7 @@
     padding-top: .25em;
 
     &.is-hidden {
-      visibility: visible;
-      opacity: 1;
+      display: block;
     }
   }
 

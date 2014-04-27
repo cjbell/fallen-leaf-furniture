@@ -1,0 +1,35 @@
+.social-icons {
+  padding: 1em;
+}
+
+.social-icons__items {
+  margin: 0; padding: 0;
+  list-style: none;
+}
+
+.social-icons__item {
+  @include inline-block;
+}
+
+.social-icons__item__text {
+  display: none;
+}
+
+.social-icons__item__link {
+  display: block;
+  width: 23px; height: 23px;
+  margin-right: 1em;
+  background-position: center center;
+}
+
+.social-icons__item__link--facebook {
+  background-image: image-url("facebook.png");
+}
+
+.social-icons__item__link--twitter {
+  background-image: image-url("twitter.png");
+}
+
+.social-icons__item__link--instagram {
+  background-image: image-url("instagram.png");
+}
