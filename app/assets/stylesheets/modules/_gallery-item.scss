@@ -18,6 +18,15 @@
   z-index: 1;
 }
 
+.gallery-item__nav-link {
+  float: right;
+  font-style: italic;
+  font-size: 0.9em;
+  margin: .5em .5em 0 0;
+  text-decoration: none;
+  color: lighten(#232323, 20%);
+}
+
 @include media-query("(min-width: 42em)") {
   .gallery-item {
     max-width: 34em;

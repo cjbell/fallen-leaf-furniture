@@ -1,4 +1,6 @@
 <div class="gallery-cover"></div>
 <section class="gallery-item">
   <img src="<%= @image.source.url(:full) %>" class="gallery-item__img">
+
+  <%= link_to "Back to all images", images_path, class: 'gallery-item__nav-link' %>
 </section>
